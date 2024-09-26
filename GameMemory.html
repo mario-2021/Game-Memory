@@ -5,150 +5,261 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/GMemory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo:wght@400;700&family=Open+Sans:wght@300;400;700&family=Public+Sans:wght@200;300;400&family=Roboto:wght@100;300;400;500&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/normalize.css">
+        <link rel="stylesheet" href="./CSS/font-awesome.css">
+        <link rel="stylesheet" href="./CSS/font-awesome.min.css">
     <title>Memory Game</title>
-    <link rel="stylesheet" href="./GMemory.css">
 </head>
 
 <body>
 
     <div class="control-buttons">
-        <span>Start Game</span>
+        <span class="fw-bold">Start Game</span>
     </div>
-    <div class="info-container">
-        <div class="name">
-            hello: <span></span>
+
+    <div class="position-absolute w-100 backGroundPhoto">
+        <img src="./Source/background4.jpg" alt="" class="w-100 h-100">
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="position-absolute mainDiv">
+
+        <div class="info-container form-control">
+            <div class="name fs-3 fw-bold">
+                hello: <span></span>
+            </div>
+            <div class="tries fs-3 fw-bold">
+                Wrong Tries: <span>0</span>
+            </div>
         </div>
-        <div class="tries">
-            Wrong Tries: <span>0</span>
+        <div class="memory-game-blocks">
+            <div class="game-block" data-fruits="Banana">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Banana.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Banana">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Banana.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Apple">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Apple.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Apple">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Apple.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Avocado">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Avocado.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Avocado">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Avocado.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Cherry">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Cherry.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Cherry">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Cherry.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Kiwi">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Kiwi.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Kiwi">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Kiwi.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Mango">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Mango.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Mango">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Mango.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Orange">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Orange.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Orange">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Orange.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Peach">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Peach.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Peach">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Peach.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Strawberry">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Strawberry.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="Strawberry">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/Strawberry.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="WaterMelon">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/WaterMelon.jpg" alt="">
+                </div>
+            </div>
+            <div class="game-block" data-fruits="WaterMelon">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./Source/WaterMelon.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    <a class="btn btn-outline-success text-decoration-none startNew m-auto startNew m-auto
+    fw-bold fs-4" 
+    href="./GameMemory.html">
+    Start New Game
+    </a>
+
+    </div>
+</div>
+
+<div class="clearfix"></div> <br>
+
+<div class="footer pt-5 pb-5 text-white-50 text-center text-md-start position-absolute">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="info">
+                    <img src="./Images/logo2.png" alt="" class="mb-4 img-fluid logo">
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptas.
+                        Deleniti, necessitatibus illo deserunt modi facilis cum aliquam aut obcaecati maxime saepe
+                        eos consequuntur, ea iste rerum possimus nemo. Nesciunt!</p>
+                    <div class="copyright">
+                        Created By <span>MeroSH</span> &copy; 2022
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="links">
+                    <h5 class="text-light links">Links</h5>
+                    <ul class="list-unstyled lh-lg">
+                        <li>Home</li>
+                        <li>Our Services</li>
+                        <li>Portfolio</li>
+                        <li>Testimonials</li>
+                        <li>Support</li>
+                        <li>Terms and Condition</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="links">
+                    <h5 class="text-light">About Us</h5>
+                    <ul class="list-unstyled lh-lg">
+                        <li>Sign In</li>
+                        <li>Register</li>
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="contact">
+                    <h5 class="text-light">Contact Us</h5>
+                    <p class="lh-lg mt-3 mb-5">Get in touch with us via mail phone. We are waiting for your call or
+                        message</p>
+                    <a class="btn rounded-pill w-100 fw-bold" 
+                    href="mailto:mariocpu2016@gmail.com?subject=Contact">
+                    mariocpu2016@gmail.com</a>
+                    <ul class="d-flex mt-5 list-unstyled gap-3">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61565837540720" 
+                            class="d-block text-light fs-4">
+                                <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-block text-light fs-4">
+                                <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mario-shawky-340996108" 
+                            class="d-block text-light fs-4">
+                                <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/mer0sh" class="d-block text-light fs-4">
+                                <i class="fa-brands fa-vk fa-lg vk rounded-circle p-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="memory-game-blocks">
-        <div class="game-block" data-fruits="Banana">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Banana.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Banana">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Banana.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Apple">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Apple.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Apple">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Apple.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Avocado">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Avocado.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Avocado">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Avocado.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Cherry">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Cherry.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Cherry">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Cherry.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Kiwi">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Kiwi.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Kiwi">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Kiwi.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Mango">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Mango.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Mango">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Mango.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Orange">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Orange.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Orange">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Orange.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Peach">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Peach.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Peach">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Peach.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Strawberry">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Strawberry.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="Strawberry">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/Strawberry.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="WaterMelon">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/WaterMelon.jpg" alt="">
-            </div>
-        </div>
-        <div class="game-block" data-fruits="WaterMelon">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="./Source/WaterMelon.jpg" alt="">
-            </div>
-        </div>
-    </div>
+</div>
 
     <audio id="success" src="./Source/success.mp3" preload="auto"></audio>
     <audio id="fail" src="./Source/fail.mp3" preload="auto"></audio>
 
-    <script src="./GMemory.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/GMemory.js"></script>
 </body>
 
 </html>
