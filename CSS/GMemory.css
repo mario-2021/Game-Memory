@@ -72,9 +72,9 @@
     overflow: hidden;
     border: 1px solid #304D30;
     border-radius: 15px;
-    position: relative;
+    /* position: relative;
     top: 0;
-    left: 5px;
+    left: 5px; */
     z-index: 1;
   }
 
@@ -110,7 +110,7 @@
     transition: transform .5s;
     transform-style: preserve-3d;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
     flex: 1 0 200px;
     margin: 0 10px 20px;
     box-shadow: 3px 3px 0px 3px #4e8152;
@@ -145,7 +145,7 @@
   }
   
   .memory-game-blocks .game-block .face {
-    position: absolute;
+    /* position: absolute; */
     width: 101%;
     height: 100%;
     text-align: center;
