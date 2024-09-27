@@ -197,6 +197,10 @@
     background-color: transparent;
   }
 
+  .footer .maxWidthNone {
+    max-width: none;
+  }
+
   .footer li .facebook {
     color: #d7dadf;
     width: 70px;
@@ -215,6 +219,11 @@
   }
 
   @media (max-width: 991px) {
+
+    .info-container {
+      font-size: 18px;
+    }
+
     .memory-game-blocks .game-block {
       /* flex: 1 0 100px;
       height: 100px; */
@@ -222,7 +231,7 @@
       flex-direction: column;
       display: flex;
       flex: 25%;
-      height: 130px;
+      height: 125px;
     }
     .memory-game-blocks .game-block .front:before {
       font-size: 120px;
