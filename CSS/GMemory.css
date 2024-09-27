@@ -216,8 +216,18 @@
 
   @media (max-width: 991px) {
 
-    .info-container {
-      font-size: 18px;
+    .info-container .name {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem !important;
+      letter-spacing: 1.5px;
+  }
+
+    .info-container .tries {
+      width: 100%;
+      text-align: center;
+      font-size: 3rem !important;
+      letter-spacing: 3.25px;
     }
 
     .memory-game-blocks .game-block {
