@@ -197,10 +197,6 @@
     background-color: transparent;
   }
 
-  .footer .maxWidthNone {
-    max-width: none;
-  }
-
   .footer li .facebook {
     color: #d7dadf;
     width: 70px;
@@ -238,4 +234,9 @@
       position: relative;
       top: -35px;
     }
+    .ulIconz {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
   }
