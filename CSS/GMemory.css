@@ -237,12 +237,16 @@
       flex-direction: column;
       display: flex;
       flex: 25%;
-      height: 125px;
+      height: 70px;
+      box-shadow: 0px 0px 10px 1px #4e8152;
     }
     .memory-game-blocks .game-block .front:before {
-      font-size: 120px;
+      font-size: 60px;
       position: relative;
-      top: -35px;
+      top: -65px;
+    }
+    .memory-game-blocks .game-block .face {
+      border: none;
     }
     .ulIconz {
       flex-wrap: wrap;
