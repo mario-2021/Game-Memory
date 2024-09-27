@@ -213,3 +213,9 @@
     color: #d7dadf;
     width: 70px;
   }
+
+  @media (min-width: 400px) and (max-width: 991px) {
+    .memory-game-blocks .game-block {
+      flex: 1 0 150px;
+    }
+  }
